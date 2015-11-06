@@ -45,9 +45,9 @@ describe('Acceptance: Getting Around', function() {
     click(".resources");
 
     andThen(function(){
-      expect(find('ul li').length).to.eq(3);
+      expect(find('ul li.resources').length).to.eq(3);
       expect(find('ul li:first a').attr('href')).to.eq("/resources/1");
-      expect(find('ul li:first a').text()).to.eq("Hacking 101");
+      expect(find('ul li:first a').text().trim()).to.eq("Hacking 101");
     });
   });
 
