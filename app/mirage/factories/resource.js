@@ -4,7 +4,9 @@ export default Mirage.Factory.extend({
   title: function(){
     return `Learn ${faker.hacker.ingverb()}`;
   },
-  description: faker.hacker.phrase,
-  url: 'www.example.com',
+  description: function(){
+    return `This is a great book! ${faker.hacker.phrase()}`;
+  },
+  url: faker.internet.domainName,
   topic: faker.hacker.noun
 });
