@@ -38,11 +38,11 @@ describe('Acceptance: Getting Around', function() {
   });
 
   it('lists all of the resources', function(){
-    server.create('course', {name: "Hacking 101"});
-    server.createList('course', 2);
+    server.create('resource', {title: "Hacking 101"});
+    server.createList('resource', 2);
 
     visit('/');
-    click(".courses");
+    click(".resources");
 
     andThen(function(){
       expect(find('ul li').length).to.eq(3);
@@ -53,7 +53,7 @@ describe('Acceptance: Getting Around', function() {
 
   it('shows a specific resource', function(){
     server.create('resource', {
-      name: "Hacking 101",
+      title: "Hacking 101",
       description: "Be the black hat you always wanted to be!"
     });
 
@@ -62,8 +62,8 @@ describe('Acceptance: Getting Around', function() {
     click('ul li:first a');
 
     andThen(function(){
-      expect(find('h2').text()).to.eq("Hacking 101");
-      expect(find('p').text().trim()).to.eq("Be the black hat you always wanted to be!");
+      expect(find('h4').text()).to.eq("Hacking 101");
+      expect(find('p#description').text().trim()).to.eq("description: Be the black hat you always wanted to be!");
     });
   });
 });
