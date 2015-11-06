@@ -14,5 +14,7 @@ Just jotting down the steps I took so I don't forget/future reference:
 
 1. Install mocha addon, pretender addon, mirage addon. 
 2. set up `app/mirage/scenarios/default.js`.
-3. `ember generate acceptance-test routing`.
-4. Write tests. 
+3. set up `app/mirage/config.js` to stub web requests. 
+4. set up facotries in `app/mirage/factories` directory. 
+5. `ember generate acceptance-test routing`.
+6. Write tests. 
