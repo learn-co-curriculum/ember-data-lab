@@ -18,3 +18,4 @@ Just jotting down the steps I took so I don't forget/future reference:
 4. set up facotries in `app/mirage/factories` directory. 
 5. `ember generate acceptance-test routing`.
 6. Write tests. 
+<a href='https://learn.co/lessons/ember-data-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
