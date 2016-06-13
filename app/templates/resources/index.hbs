@@ -1,12 +1,5 @@
 <div class="container col-md-6 col-md-offset-3">
   <ul class="list-group">
-    {{#each model as |resource|}}
-     <li class="list-group-item active resources">
-      {{#link-to 'resources.resource' resource}}
-         <h5>{{resource.title}}</h5> 
-     {{/link-to}}</li>
-         <li class="list-group-item"><p>topic: {{resource.topic}}</p></li>
-         <li class="list-group-item"><p>url: {{resource.url}}</p></li>
-    {{/each}}
+    Iterate over the model collection here. Use the tests and the instructions in the REAMDE to get the formatting right.
   </ul>
 </div>
