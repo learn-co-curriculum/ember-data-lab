@@ -12,7 +12,7 @@
 
 In this app, you'll be building a library of educational resources. We'll be dealing with one model, the Resources model. Each resource represents an educational resource (a book, blog post, website, you name it). We'll be using the Active Model Adapter to connect to an external API of educational resources. For the purposes of development and testing, however, we have configured a Javascript library called Mirage to stub external web requests to the API and provide you with some dummy seed data to work with. 
 
-This app is simply--users can browse the index of all resources, or view a specific resource. That's it!
+This app is simple--users can browse the index of all resources, or view a specific resource. That's it!
 
 ## Instructions
 
@@ -76,3 +76,4 @@ export default Model.extend({
 * Let's create the page that the above link will bring the user to. In `templates/resources/index.hbs` we'll iterate over all of the resources. Iterate over the list of resources using the `#each` Handlebars helper. The title, topic and URL of each resource should be list items (`<li>`s), with the title also wrapped in `<h5>` tags. 
 * Build the show page for a given resource, `app/templates/resources/resource.hbs`. 
   * This page should display the title of the resource in an `<h4>` tag, and the details of the resouce in `<p>` tags. 
+<p class='util--hide'>View <a href='https://learn.co/lessons/ember-data-lab'>Ember Data Lab</a> on Learn.co and start learning to code for free.</p>
